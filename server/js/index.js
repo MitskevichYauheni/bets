@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
 app.post('/bet', function(req, res){
-  
+
   Bet.create({ nameBet: req.body.nameBet, amount: req.body.amount, amountMin: req.body.amountMin,
     amountMax: req.body.amountMax, odds: req.body.odds, enemy: req.body.enemy, comment: req.body.comment
     }, function(err, bet) {
@@ -21,6 +21,17 @@ app.post('/bet', function(req, res){
       console.log(err);
     } else {
       res.send(bet);
+    }
+  })
+})
+
+app.get('/allbets', function(req, res){
+  Bet.find({}, function(err, users) {
+    if(err){
+      console.log(err);
+    } else {
+      res.send(users);
+      res.end();
     }
   })
 })
