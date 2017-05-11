@@ -6,6 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Zhenya Mitskevich, Dudko Serhei, Mogilevich Dmitry",
+  "author": "Yauheni Mitskevich, Dudko Serhei, Mogilevich Dmitry",
   "license": "ISC"
 }
