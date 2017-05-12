@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './bet.css';
-import BetForm from './bet-form/bet-form';
+import BetForm from './bet-form/bet-form.jsx';
 
 class Bet extends Component {
   render() {

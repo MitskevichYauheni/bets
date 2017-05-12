@@ -8,6 +8,7 @@ class BetForm extends Component {
       odds: '2'
     };
     this.handleOddsChange = this.handleOddsChange.bind(this);
+    this.onBtnBetCreate = this.onBtnBetCreate.bind(this);
   }
   handleOddsChange(e) {
     this.setState({odds: e.target.value});
@@ -26,11 +27,6 @@ class BetForm extends Component {
         comment: (this.refs.betForm__comment).value
       })
     })
-    console.log((this.refs.betForm__name).value);
-    console.log((this.refs.betForm__amount).value);
-    console.log((this.refs.betForm__odds).value);
-    console.log((this.refs.betForm__enemy).value);
-    console.log((this.refs.betForm__comment).value);
   }
   onBtnBetCreate(e) {
     e.preventDefault();

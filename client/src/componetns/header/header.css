@@ -1,7 +1,19 @@
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header__title {
-  
+
+}
+.header-info {
+  position: relative;
+}
+.header-pupup {
+  width: 200px;
+  position: absolute;
+  background: #adadad;
+  right: 0;
+}
+.header-pupup__text {
+
 }

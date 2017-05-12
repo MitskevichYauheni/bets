@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+.none {
+  display: none;
+}
 .main {
   max-width: 1440px;
   margin: 0 auto;
@@ -14,5 +17,9 @@
 }
 .second-title {
   font-size: 24px;
+  color: #333;
+}
+.text {
+  font-size: 16px;
   color: #333;
 }
